@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.RegisterController">
+   <left>
+      <AnchorPane prefHeight="549.0" prefWidth="271.0" style="-fx-background-color: #263F73;" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fill="TRANSPARENT" layoutX="133.0" layoutY="225.0" radius="97.0" stroke="#807b7b" strokeType="INSIDE" />
+            <Label alignment="CENTER" layoutX="-1.0" layoutY="498.0" prefHeight="30.0" prefWidth="271.0" text="Copyright.(c). All Rights Reserved" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="180.0" prefHeight="30.0" prefWidth="272.0" text="ATD" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="24.0" />
+               </font>
+            </Label>
+            <Line endX="100.0" layoutX="116.0" layoutY="224.0" startX="-65.0" stroke="WHITE" strokeWidth="2.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Line>
+            <Label alignment="CENTER" layoutX="-1.0" layoutY="233.0" prefHeight="30.0" prefWidth="271.0" text="Lamda" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Demibold Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="549.0" prefWidth="469.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="35.0" layoutY="161.0" text="Username">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutY="46.0" prefHeight="30.0" prefWidth="424.0" text="Nice to meet you!">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="usernameTextfield" layoutX="189.0" layoutY="162.0" prefHeight="25.0" prefWidth="218.0" promptText="Username">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="35.0" layoutY="295.0" text="Password">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passwordPasswordfield" layoutX="189.0" layoutY="296.0" prefHeight="25.0" prefWidth="218.0" promptText="Enter Password">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </PasswordField>
+            <Label layoutX="35.0" layoutY="228.0" text="Email">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="emailTextfield" layoutX="189.0" layoutY="229.0" prefHeight="25.0" prefWidth="218.0" promptText="Email">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="35.0" layoutY="362.0" text="Confirm password">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="rePasswordfield" layoutX="189.0" layoutY="363.0" prefHeight="25.0" prefWidth="218.0" promptText="Re Enter Password">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="registerButton" layoutX="59.0" layoutY="433.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #263F73;" text="Register" textFill="WHITE">
+               <font>
+                  <Font name="Verdana" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="registerMessageLabel" alignment="CENTER" layoutX="47.0" layoutY="110.0" prefHeight="20.0" prefWidth="331.0" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="54.0" layoutY="510.0" prefHeight="25.0" prefWidth="239.0" text="If you arleady have exisiting user">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="clickHereButton" layoutX="296.0" layoutY="510.0" mnemonicParsing="false" onAction="#clickHereButtonOnAction" prefHeight="25.0" prefWidth="80.0" text="click here" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

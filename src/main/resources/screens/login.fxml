@@ -69,7 +69,7 @@
                   <Font name="Verdana" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="registerButton" layoutX="44.0" layoutY="389.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #263F73;" text="Register" textFill="WHITE">
+            <Button fx:id="registerButton" layoutX="44.0" layoutY="389.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="50.0" prefWidth="320.0" style="-fx-background-color: #263F73;" text="Register" textFill="WHITE">
                <font>
                   <Font name="Verdana" size="14.0" />
                </font>

@@ -4,7 +4,7 @@ import java.io.*;
 import java.sql.*;
 
 public class databaseConnection {
-    private static final String URL = "jdbc:mysql://localhost:3306/lesson_db";
+    private static final String URL = "jdbc:mysql://localhost:3306/atd_lamda";
     private static final String USER = "root";
     private static final String PASSWORD = readPasswordFromFile("D:/Desktop/private_lessons/mysql_pass.txt");
 

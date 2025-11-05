@@ -1,5 +1,5 @@
-package controllers;
-import services.AuthService;
+package atd_limud.controllers;
+import atd_limud.services.AuthService;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
@@ -14,7 +14,6 @@ import javafx.scene.control.PasswordField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.sql.SQLException;
 
 public class LoginController {
 
@@ -24,7 +23,7 @@ public class LoginController {
     private Parent root;
 
     @FXML
-    private Button registerButton;
+    private Button SignupButton;
 
     @FXML
     private Button loginButton;
@@ -39,7 +38,7 @@ public class LoginController {
     private PasswordField passwordPasswordfield;
 
 
-    public void registerButtonOnAction(ActionEvent e) throws IOException {
+    public void SignupButtonOnAction(ActionEvent e) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/screens/register.fxml"));
         Stage stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
         stage.setScene(new Scene(root));

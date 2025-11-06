@@ -48,7 +48,7 @@ public class RegisterController {
 
 
 
-    public void registerButtonOnAction(ActionEvent e)
+    public void registerButtonOnAction(ActionEvent e) throws IOException
     {
         String username = usernameTextfield.getText();
         String password = passwordPasswordfield.getText();
@@ -92,6 +92,10 @@ public class RegisterController {
             String userId = authService.generateUserId();
             User newUser = new User(userId,username, password, email, null);
             authService.registerUser(newUser);
+            Parent root = FXMLLoader.load(getClass().getResource("/screens/signUpComplete.fxml"));
+            Stage stage = (Stage) ((Node) e.getSource()).getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
         }
     }
 

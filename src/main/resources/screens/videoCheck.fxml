@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="atd_limud.controllers.VideoCheckController">
+   <top>
+      <AnchorPane prefHeight="94.0" prefWidth="696.0" style="-fx-background-color: #263F73;" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fill="TRANSPARENT" layoutX="62.0" layoutY="49.0" radius="35.0" stroke="#807b7b" strokeType="INSIDE" />
+            <Label alignment="CENTER" layoutX="25.0" layoutY="50.0" prefHeight="28.0" prefWidth="70.0" text="Lamda" textFill="WHITE">
+               <font>
+                  <Font name="Lucida Sans Demibold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="31.0" layoutY="21.0" prefHeight="30.0" prefWidth="61.0" text="ATD" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font>
+            </Label>
+            <Line endX="-12.79998779296875" endY="-7.62939453125E-6" layoutX="100.0" layoutY="51.0" startX="-65.39999389648438" startY="-7.62939453125E-6" stroke="WHITE" strokeWidth="2.0">
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Line>
+            <Label alignment="CENTER" layoutX="83.0" layoutY="24.0" prefHeight="55.0" prefWidth="530.0" text="Welcome, Video check" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="videoContainer" layoutX="104.0" layoutY="56.0" prefHeight="342.0" prefWidth="486.0" style="-fx-background-color: #CCCCCC;" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -45,7 +45,7 @@ public class LoginController {
         stage.show();
     }
 
-    public void loginButtonOnAction(ActionEvent event)
+    public void loginButtonOnAction(ActionEvent event) throws IOException
     {
         String username = usernameTextfield.getText();
         String password = passwordPasswordfield.getText();
@@ -59,6 +59,10 @@ public class LoginController {
             boolean success = authService.validateLogin(username, password);
             if (success) {
                 loginMessageLabel.setText("Login successful! Welcome " + username);
+                Parent root = FXMLLoader.load(getClass().getResource("/screens/VideoCheck.fxml"));
+                Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                stage.setScene(new Scene(root));
+                stage.show();
             } else {
                 loginMessageLabel.setText("Invalid username or password");
             }
